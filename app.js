@@ -1,7 +1,7 @@
 function randomRGB(){
-const r = Msth.floor(Math.random() * 256);
-const g = Msth.floor(Math.random() * 256);
-const b = Msth.floor(Math.random() * 256);
+const r = Math.floor(Math.random() * 256);
+const g = Math.floor(Math.random() * 256);
+const b = Math.floor(Math.random() * 256);
 return `rgb(${r},${g},${b})`
 }
 
@@ -10,4 +10,4 @@ const interValid = setInterval(function () {
     for (let letter of letters) {
         letter.style.color = randomRGB();
     }
-}, 2000);
+}, 1000);
